@@ -1,6 +1,56 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding-bottom: 1rem;
+}
+
 /* Base */
 
 body {
 	background: #f3f4f5;
 	padding: 2rem;
+}
+
+/* Tabs */
+
+.tabs__content,
+.tabs__link {
+	background: #fff;
+}
+
+.tabs__content {
+	padding: 2rem;
+}
+
+.tabs__list {
+	display: flex;
+}
+
+.tabs__list > li > a {
+	border-top: 0.25rem solid transparent;
+	display: block;
+	font-weight: 700;
+	padding: 1rem;
+}
+
+.tabs__list > li > .tabs__link--active {
+	border-top: 0.25rem solid #06a7a9;
 }
