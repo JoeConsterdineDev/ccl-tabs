@@ -36,9 +36,7 @@ body {
 	background: #fff;
 }
 
-.tabs__content {
-	padding: 2rem;
-}
+/* Tabs List */
 
 .tabs__list {
 	display: flex;
@@ -53,4 +51,15 @@ body {
 
 .tabs__list > li > .tabs__link--active {
 	border-top: 0.25rem solid #06a7a9;
+}
+
+/* Tabs Item */
+
+.tabs__item {
+	display: none;
+	padding: 2rem;
+}
+
+.tabs__item.active {
+	display: block;
 }

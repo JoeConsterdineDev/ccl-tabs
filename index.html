@@ -7,20 +7,32 @@
 		<title>CCL Tabs</title>
 		<link rel="stylesheet" href="assets/normalize.css">
 		<link rel="stylesheet" href="assets/style.css">
-		<script src="js/tabs.js"></script>
 	</head>
 	<body>
 		<section class="tabs">
-			<ul class="tabs__list">
-				<li><a class="tabs__link" href="#tab-1">Terminal 1</a></li>
-				<li><a class="tabs__link tabs__link--active" href="#tab-2">Terminal 2</a></li>
+			<ul class="tabs__list" id="tabs-list">
+				<li><a class="tabs__link tabs__link--active" href="#tab-1">Terminal 1</a></li>
+				<li><a class="tabs__link" href="#tab-2">Terminal 2</a></li>
 				<li><a class="tabs__link" href="#tab-3">Terminal 3</a></li>
 			</ul>
 			<div class="tabs__content">
-				<h3>Directions</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, soluta necessitatibus! Tenetur, aut veritatis pariatur totam ab magni dignissimos delectus veniam omnis voluptatum ducimus minima ex laudantium qui autem necessitatibus?</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, soluta necessitatibus! Tenetur, aut veritatis pariatur totam ab magni dignissimos delectus veniam omnis voluptatum ducimus minima ex laudantium qui autem necessitatibus?</p>
+				<div class="tabs__item active" id="tab-1">
+					<h3>Directions 1</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, soluta necessitatibus! Tenetur, aut veritatis pariatur totam ab magni dignissimos delectus veniam omnis voluptatum ducimus minima ex laudantium qui autem necessitatibus?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, soluta necessitatibus! Tenetur, aut veritatis pariatur totam ab magni dignissimos delectus veniam omnis voluptatum ducimus minima ex laudantium qui autem necessitatibus?</p>
+				</div>
+				<div class="tabs__item" id="tab-2">
+					<h3>Directions 2</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, soluta necessitatibus! Tenetur, aut veritatis pariatur totam ab magni dignissimos delectus veniam omnis voluptatum ducimus minima ex laudantium qui autem necessitatibus?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, soluta necessitatibus! Tenetur, aut veritatis pariatur totam ab magni dignissimos delectus veniam omnis voluptatum ducimus minima ex laudantium qui autem necessitatibus?</p>
+				</div>
+				<div class="tabs__item" id="tab-3">
+					<h3>Directions 3</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, soluta necessitatibus! Tenetur, aut veritatis pariatur totam ab magni dignissimos delectus veniam omnis voluptatum ducimus minima ex laudantium qui autem necessitatibus?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, soluta necessitatibus! Tenetur, aut veritatis pariatur totam ab magni dignissimos delectus veniam omnis voluptatum ducimus minima ex laudantium qui autem necessitatibus?</p>
+				</div>
 			</div>
 		</section>
+		<script src="js/tabs.js"></script>
 	</body>
 </html>
