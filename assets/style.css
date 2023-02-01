@@ -26,6 +26,8 @@ h6 {
 
 body {
 	background: #f3f4f5;
+	color: #032f61;
+	font-family: 'Lato', sans-serif;
 	padding: 2rem;
 }
 
@@ -40,13 +42,16 @@ body {
 
 .tabs__list {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .tabs__list > li > a {
 	border-top: 0.25rem solid transparent;
+	color: #032f61;
 	display: block;
 	font-weight: 700;
 	padding: 1rem;
+	text-decoration: none;
 }
 
 .tabs__list > li > .tabs__link--active {
