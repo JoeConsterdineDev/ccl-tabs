@@ -33,19 +33,19 @@ body {
 
 /* Tabs */
 
-.tabs__content,
-.tabs__link {
+.tabs-content,
+.tabs-link {
 	background: #fff;
 }
 
 /* Tabs List */
 
-.tabs__list {
+.tabs-list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.tabs__list > li > a {
+.tabs-list > li > a {
 	border-top: 0.25rem solid transparent;
 	color: #032f61;
 	display: block;
@@ -54,17 +54,17 @@ body {
 	text-decoration: none;
 }
 
-.tabs__list > li > .tabs__link--active {
+.tabs-list > li > .active {
 	border-top: 0.25rem solid #06a7a9;
 }
 
 /* Tabs Item */
 
-.tabs__item {
+.tabs-item {
 	display: none;
 	padding: 2rem;
 }
 
-.tabs__item.active {
+.tabs-item.active {
 	display: block;
 }

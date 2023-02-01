@@ -1,8 +1,8 @@
 // Tabs
 
-const tabs = document.getElementById('tabs-list');
+const tabs = document.querySelector('.tabs-list');
 const tabsLinks = tabs.querySelectorAll('li > a');
-const tabItems = document.querySelectorAll('.tabs__content > .tabs__item');
+const tabItems = document.querySelectorAll('.tabs-content > .tabs-item');
 
 // When tab clicked
 const onTabsClick = (event) => {
@@ -13,7 +13,8 @@ const onTabsClick = (event) => {
 
 	// Remove active styles from all tabs
 	tabsLinks.forEach((tab) => {
-		tab.classList.remove('tabs__link--active');
+		tab.classList.remove('active');
+		tab.removeAttribute('aria-selected');
 	});
 
 	// Tab items
@@ -23,11 +24,11 @@ const onTabsClick = (event) => {
 
 		if(item.id === tabHref) {
 			item.classList.add('active');
+			tab.setAttribute('aria-selected', true);
 		}
 	});
 
 	// Apply active style to clicked tab
-	tab.classList.add('tabs__link--active');
 	tab.classList.add('active');
 }
 
